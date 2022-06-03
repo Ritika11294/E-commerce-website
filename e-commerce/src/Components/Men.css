@@ -1,0 +1,146 @@
+.main{
+    display: flex;
+    margin-top:20px;
+    /* border: 1px solid blue; */
+    width: 99.7%;
+}
+
+.left{
+    width: 20%;
+    height: 240px;
+    border: 1px solid black;
+    margin-left:120px
+    
+    
+}
+
+.right{
+    width: 62%;
+    /* border: 1px solid red; */
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+    margin-left:20px
+}
+.subDiv{
+    /* border:1px solid green; */
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 25px;
+
+}
+
+
+.imageDiv{
+    /* border: 1px solid blue; */
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+
+.productInfo{
+    width: 85%;
+    margin: auto;
+    
+    /* border:1px solid blue */
+    
+}
+
+.title{
+    /* border:1px solid red; */
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 15px;
+    word-spacing: 1px;
+    letter-spacing: 0.8px;
+    margin-top: 4px;
+    text-align: left;
+}
+.price {
+    text-align:left;
+    /* border: 1px solid green; */
+    margin-top: 1px
+}
+
+.outerBox{
+    /* border: 1px solid green; */
+    margin-top:80px
+}
+.sort{
+    text-align: right;
+    /* border: 1px solid blue; */
+    width:90%
+}
+
+.cartBtn{
+    /* border: 1px solid green; */
+    margin-top:-11px
+    
+}
+.btn {
+    border: 1px solid #8595b2 ;
+    background-color:white;
+    width: 38%;
+    /* padding: 5px 0 5px;  */
+}
+.btn:hover{
+    background-color:#fff0f4
+}
+.list{
+    list-style: none;
+    text-align: center;
+}
+
+@media only screen and (min-width:390px) and (max-width:768px) {
+
+    .right{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1px;
+        margin-left:20px
+    }
+    
+}
+
+@media only screen and (min-width:0px) and (max-width:390px) {
+    .right {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1px;
+    
+    }
+
+}
+
+.mainBox{
+    display: flex;
+    margin: auto;
+    margin-top:20px;
+    justify-content:space-between;
+    width: 50%;
+    height:450px
+}
+
+.leftProd{
+    width: 20%;   
+}
+
+.rightProd{
+    width: 40%;
+      margin-left:20px;
+      text-align: left;
+}
+
+.add{
+    padding: 10px 40px 10px 40px;
+    background-color:#42a2a2;
+    color:white;
+    border: none;
+}
+.add:hover{
+    
+    background-color:#e8f3e5;
+    color: #74993a;
+    border: 1px solid white
+}

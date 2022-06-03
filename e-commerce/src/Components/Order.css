@@ -1,0 +1,77 @@
+.rightmain{
+    width:50%;
+    /* border:1px solid black; */
+    /* margin: auto; */
+    margin-left:20px
+    
+}
+
+.mainOrder{
+    margin:auto;
+    /* border: 1px solid green; */
+    width: 50%
+}
+
+.Leftorder{
+    border:1px solid #bcada9;
+    border-radius:5px;
+    width:40%;
+    height:150px;
+    margin-left:50px;
+    margin-top:32px;
+    
+    
+}
+
+
+.orderSummary{
+    margin-top: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color:#e8f3e5;
+    border-radius:5px
+}
+
+
+.imageOrder{
+    width: 100%;
+    border: 1px solid #bcada9;
+    border-radius:5px;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 30px 0 30px 0;
+    
+}
+
+.desecp{
+    width: 70%;
+    text-align: left;
+    margin-right:10%
+}
+
+.currencyOrder{
+    display: flex;
+    
+}
+
+
+.Qty1{
+    margin-top: 4px;
+    
+
+}
+
+.Orderpay{
+    margin-top:20px;
+    padding: 10px 40px 10px 40px;
+    background-color:#e8f3e5;
+    color: #74993a;
+    border: 1px solid white
+ 
+ }
+ .Orderpay:hover{
+    
+     background-color:#42a2a2;
+     color:white;
+     border: none;
+  
+  }

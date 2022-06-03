@@ -1,0 +1,7 @@
+@media (max-width:1465px) {
+    .Nav{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+}
