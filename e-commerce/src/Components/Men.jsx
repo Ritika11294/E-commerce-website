@@ -71,7 +71,7 @@ export const Men = () => {
             price = price
         }
         
-        axios.get(`https://backend-e-com.herokuapp.com/menProducts?price=${price}`).then((res) => {
+        axios.get(`https://e-commerce-api-uljp.onrender.com/menProducts?price=${price}`).then((res) => {
             dispatch(productData(res.data))
         })
     }

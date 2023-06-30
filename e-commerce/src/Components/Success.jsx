@@ -11,7 +11,7 @@ export const Success = () => {
 
     useEffect(() => {
         
-        axios.delete(`https://backend-e-com.herokuapp.com/cart`).then((res) => {
+        axios.delete(`https://e-commerce-api-uljp.onrender.com/cart`).then((res) => {
             console.log("empty")
         })
     }, [])

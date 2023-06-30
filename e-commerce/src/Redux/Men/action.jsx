@@ -8,7 +8,7 @@ export const productData = (value) => ({type: PRODUCT_DATA, payload: value});
 
 export const getProductData = (dispatch) => {
     
-        axios.get(`https://backend-e-com.herokuapp.com/menProducts`).then((res) => {
+        axios.get(`https://e-commerce-api-uljp.onrender.com/menProducts`).then((res) => {
             dispatch(productData(res.data))
 
         })

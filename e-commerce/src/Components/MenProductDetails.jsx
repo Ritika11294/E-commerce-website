@@ -40,7 +40,7 @@ export const MenProductDetails = () => {
 
   const getIndividualProduct = () => {
     axios
-      .get(`https://backend-e-com.herokuapp.com/menProducts/${id}`)
+      .get(`https://e-commerce-api-uljp.onrender.com/menProducts/${id}`)
       .then((res) => {
         dispatch(selectedData(res.data));
 
@@ -50,7 +50,7 @@ export const MenProductDetails = () => {
 
   const handleCart = () => {
     axios
-      .post(`https://backend-e-com.herokuapp.com/cart`, {...product, qty:1})
+      .post(`https://e-commerce-api-uljp.onrender.com/cart`, {...product, qty:1})
       .then((res) => {
         dispatch(addToCart(res.data._id));
       });

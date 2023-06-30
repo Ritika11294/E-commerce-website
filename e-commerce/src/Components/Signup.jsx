@@ -42,7 +42,7 @@ export const Signup = () => {
 
     const handleSubmit = () => {
         setData(true);
-        axios.post(`https://backend-e-com.herokuapp.com/register`, values)
+        axios.post(`https://e-commerce-api-uljp.onrender.com/register`, values)
             .then((res) => {
                 console.log(res)
                 setData(false);

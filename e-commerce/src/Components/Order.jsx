@@ -35,7 +35,7 @@ export const Order = () => {
 
   const getData = () => {
     setLoading(true);
-    axios.get(`https://backend-e-com.herokuapp.com/cart`).then((res) => {
+    axios.get(`https://e-commerce-api-uljp.onrender.com/cart`).then((res) => {
       setValue(res.data);
       setLoading(false);
       //console.log(res.data)

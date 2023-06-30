@@ -7,7 +7,7 @@ export const WomenProductData = (value) => ({type: WOMEN_PRODUCT_DATA, payload: 
 
 export const getWomenProductData = (dispatch) => {
     
-    axios.get(`https://backend-e-com.herokuapp.com/womenProducts`).then((res) => {
+    axios.get(`https://e-commerce-api-uljp.onrender.com/womenProducts`).then((res) => {
         dispatch(WomenProductData(res.data))
 
     })

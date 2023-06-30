@@ -28,7 +28,7 @@ export function Navbar() {
   
   const getCart = () => {
     
-    axios.get(`https://backend-e-com.herokuapp.com/cart`).then((res) => {
+    axios.get(`https://e-commerce-api-uljp.onrender.com/cart`).then((res) => {
       setCartCount(res.data.length);
       getCart()
       //console.log(res.data)

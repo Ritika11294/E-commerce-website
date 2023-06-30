@@ -6,7 +6,7 @@ export const addData = (value) => ({type: GET_DATA, payload: value});   //action
 
 export const getAddData = () => (dispatch) => {
    console.log(dispatch);
-    axios.get(` https://e-commerce-json.herokuapp.com/data `).then((res) => {
+    axios.get(`https://e-commerce-api-uljp.onrender.com/data `).then((res) => {
         dispatch(addData(res.data))
 
     })

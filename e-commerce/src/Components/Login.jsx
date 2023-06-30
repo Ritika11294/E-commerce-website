@@ -40,7 +40,7 @@ export const Login = () => {
 
   const handleSubmit = () => {
     setData(true);
-    axios.post(`https://backend-e-com.herokuapp.com/login`, {
+    axios.post(`https://e-commerce-api-uljp.onrender.com/login`, {
       email: values.email,
       password: values.password,
     })
