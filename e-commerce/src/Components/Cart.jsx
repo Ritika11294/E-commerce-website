@@ -34,7 +34,7 @@ export const Cart = () => {
 
   const getData = () => {
     setLoading(true);
-    axios.get(`https://backend-e-com.herokuapp.com/cart`).then((res) => {
+    axios.get(`https://e-commerce-api-uljp.onrender.com/cart`).then((res) => {
       setValue(res.data);
       setLoading(false);
       //console.log(res.data)
@@ -44,7 +44,7 @@ export const Cart = () => {
   const increment = (e) => {
     e.qty++;
     axios
-      .patch(`https://backend-e-com.herokuapp.com/cart/${e._id}`, e)
+      .patch(`https://e-commerce-api-uljp.onrender.com/cart/${e._id}`, e)
       .then(() => {
         getData();
       });
@@ -59,7 +59,7 @@ export const Cart = () => {
       e.qty--;
     }
     axios
-      .patch(`https://backend-e-com.herokuapp.com/cart/${e._id}`, e)
+      .patch(`https://e-commerce-api-uljp.onrender.com/cart/${e._id}`, e)
       .then(() => {
         getData();
       });
@@ -68,7 +68,7 @@ export const Cart = () => {
 
   const handleRemove = (id) => {
     axios
-      .delete(`https://backend-e-com.herokuapp.com/cart/${id}`)
+      .delete(`https://e-commerce-api-uljp.onrender.com/cart/${id}`)
       .then((res) => {
         //console.log(res.data)
         getData();
